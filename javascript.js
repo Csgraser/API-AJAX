@@ -58,7 +58,7 @@ $(document).ready(function () {
 		// Creates a variable inside the scope called game and sets it equal to this which is reffering to displayGifs. since dispplayGifs being passed in as a parameter to the onClick funtion of the .game class on line 125, "this" refers to the button being pressed by the user which has the .game class. so "this" grabs the value of the "data-name" attribute of the element that was clicked. i.e. Zelda
 		var game = $(this).attr("data-name");
 		// creates a variable that is set to the api web address. instead of a specific search term we have concanitated the "game" variable. this allows the user input to be ran in the URL so that it returns the information the user specified
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + game + "&api_key=A8lYGkwc52L8O1UERk4wWa7CrSwjNdL9&limit=10";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + game + "&api_key=A8lYGkwc52L8O1UERk4wWa7CrSwjNdL9&limit=10";
 		console.log(queryURL); // displays the constructed url
 		// function to initiate a network request to the queryURL above
 		$.ajax({
