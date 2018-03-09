@@ -5,7 +5,7 @@ $(document).ready(function () {
 	// Function that displays all gif buttons
 	function displayGifButtons() {
 		$("#gifButtonsView").empty();
-		$("#gifsView").empty(); 
+		$("#gifsView").empty();
 		// erasing anything in this div id so that it doesnt duplicate the results
 		// for loop that cycles through the games variable
 		for (var i = 0; i < games.length; i++) {
